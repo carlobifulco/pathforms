@@ -1,0 +1,268 @@
+/* - base.css - */
+@media screen {
+/* http://plone.org/portal_css/base.css?original=1 */
+body{font:69% "Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif;background-color:White;color:Black;margin:0;padding:0;}
+table{font-size:100%;}
+a{color:#436976;background-color:transparent;}
+img{border:none;vertical-align:middle;}
+p{margin:0 0 0.75em 0;line-height:1.5em;}
+p img{border:none;margin:0;}
+hr{border:0;height:1px;color:#8cacbb;background-color:#8cacbb;margin:0.5em 0 1em 0;}
+h1,h2,h3,h4,h5,h6{color:Black;font-family:"Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif;margin:0.75em 0 0.25em 0;}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:Black ! important;text-decoration:none;}
+h1{font-size:160%;}
+h2{font-size:150%;}
+h3{font-size:125%;border-bottom:none;font-weight:bold;}
+h4{font-size:110%;border-bottom:none;font-weight:bold;}
+h5{font-size:100%;border-bottom:none;font-weight:bold;}
+h6{font-size:90%;border-bottom:none;font-weight:bold;}
+ul{line-height:1.5em;padding:0;}
+ol{line-height:1.5em;padding:0;}
+li{margin-bottom:0.5em;}
+dt{font-weight:bold;}
+dd{line-height:1.5em;margin-bottom:1em;}
+abbr,acronym,.explain{border-bottom:1px dotted Black;color:Black;background-color:transparent;cursor:help;}
+abbr .explain{border-bottom:none;}
+q{font-family:Baskerville,Georgia,serif;font-style:italic;font-size:120%;}
+blockquote{padding-left:0.5em;margin-left:0;border-left:4px solid #8cacbb;color:#76797c;}
+code,tt{font-family:Monaco,"Courier New",Courier,monospace;font-size:120%;color:Black;background-color:#dee7ec;padding:0 0.1em;}
+pre{font-family:Monaco,"Courier New",Courier,monospace;font-size:100%;padding:1em;border:1px solid #8cacbb;color:Black;background-color:#dee7ec;overflow:auto;}
+ins{color:green;text-decoration:none;}
+del{color:red;text-decoration:line-through;}
+
+}
+
+
+
+
+
+/* - forms.css - */
+@media screen {
+/* http://plone.org/portal_css/forms.css?original=1 */
+/* */
+/* */
+textarea {
+font: 100% Monaco, "Courier New", Courier, monospace;
+border: 1px solid #ddd;
+border-color:#666 #ddd #ddd #666;
+color: Black;
+background: White url(http://plone.org/input_background.gif) repeat-x;
+width: 100%;
+}
+input {
+font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+visibility: visible;
+border: 1px solid #ddd;
+border-color:#666 #ddd #ddd #666;
+color: Black;
+vertical-align: middle;
+background: White url(http://plone.org/input_background.gif) repeat-x;
+font-size: 1em;
+}
+
+input[type=checkbox] {
+border: none;
+margin: 0;
+background: none;
+background-color: transparent;
+}
+#searchGadget {
+border: 1px solid #8cacbb;
+}
+button {
+font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+visibility: visible;
+border: 1px solid #8cacbb;
+color: Black;
+vertical-align: middle;
+background-color: #dee7ec;
+padding: 1px;
+cursor: pointer;
+font-size: 90%;
+text-transform: none;
+}
+select {
+vertical-align: top;
+}
+form {
+border: none;
+margin: 0;
+}
+fieldset {
+border: 1px solid #8cacbb;
+margin: 1em 0em 1em 0em;
+padding: 0em 1em 1em 1em;
+line-height: 1.5em;
+width: auto;
+}
+legend {
+background: White;
+padding: 0.5em;
+font-size: 90%;
+}
+label {
+font-weight: bold;
+}
+optgroup {
+font-style: normal;
+font-weight: bold;
+color: #999;
+padding-left: 0.25em;
+}
+option {
+color: black;
+}
+optgroup > option {
+padding: 0 0.25em 0 1em;
+}
+dl.enableFormTabbing dd {
+margin-left: 0;
+padding-top: 2em;
+}
+#login-form {
+width: 30em;
+margin: 0 auto;
+}
+#login-form .field {
+clear: none;
+}
+#login-form input {
+font-size: 150%;
+}
+#login-form input.context {
+padding: 1px 10px 1px 20px;
+background-position: 9px 5px;
+margin-bottom: 1em;
+}
+#forgotten-password {
+float: right;
+width: 35%;
+margin: 0 1em;
+}
+.standalone,
+.documentEditable * .standalone {
+background: #dee7ec url(http://plone.org/linkOpaque.gif) 9px 1px no-repeat;
+color: Black;
+cursor: pointer;
+font-size: 90%;
+padding: 1px 1px 1px 15px;
+text-transform: none;
+border: 1px solid #8cacbb;
+}
+.context,
+.formControls .actionButtons .button,
+.documentEditable * .context {
+background: transparent url(http://plone.org/linkTransparent.gif) 9px 1px no-repeat;
+color: Black;
+cursor: pointer;
+font-size: 90%;
+padding: 1px 1px 1px 15px;
+text-transform: none;
+border: 1px solid #8cacbb;
+}
+.destructive,
+.documentEditable * .destructive {
+background: #ffce7b url(http://plone.org/linkTransparent.gif) 9px 1px no-repeat;
+border: 1px solid #ffa500;
+color: Black;
+cursor: pointer;
+font-size: 90%;
+padding: 1px 1px 1px 15px;
+text-transform: none;
+border: 1px solid #8cacbb;
+}
+input.searchButton {
+margin-bottom: 1px ! important;
+color: Black;
+font-size: 90%;
+background: White url(http://plone.org/search_icon.gif) 2px 1px no-repeat;
+cursor: pointer;
+padding: 1px 1px 1px 19px;
+text-transform: none;
+border: 1px solid #8cacbb;
+}
+.searchSection {
+color: #76797c;
+margin-top: 0.25em;
+}
+.searchSection label:hover {
+color: Black;
+}
+/* */
+.field {
+top: 0;
+left: 0;
+margin: 0 1em 1em 0;
+clear: both;
+}
+.field .field {
+margin: 0;
+}
+.fieldRequired {
+background: url(http://plone.org/required.gif) center left no-repeat;
+padding: 0 0 0 8px;
+color: White;
+}
+.fieldUploadFile {
+text-align: right;
+margin-right: 0.75em;
+display: none;
+}
+.fieldTextFormat {
+text-align: right;
+margin-right: 0.75em
+}
+.formHelp {
+font-size: 90%;
+color: #76797c;
+margin: 0 0 0.2em 0;
+}
+.formHelp:hover {
+color: Black;
+cursor: default;
+}
+div.error {
+/* */
+background-color: #fdc;
+border: 1px solid #d00;
+padding: 0.5em;
+margin: 0 0 1em 0;
+width: 95%;
+}
+.error .fieldRequired {
+color: #d00;
+}
+/* */
+#archetypes-fieldname-title input, input#form\.title {
+font-size: 160%;
+font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+font-weight: normal;
+width: 99%;
+}
+#archetypes-fieldname-description textarea, textarea#form\.description {
+font: 100% "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+font-weight: bold;
+}
+input.inputLabelActive {
+color: #76797c;
+}
+textarea#form\.description {
+height: 6em;
+width: 99%;
+}
+tr.selected {
+background-color: #ffa;
+}
+.kupu-save-message {
+color: white;
+font-weight: bold;
+background-color: red;
+padding: 0.3em;
+position: fixed;
+top: 0;
+right: 0;
+z-index: 999;
+}
+/* */
+
+}

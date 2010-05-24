@@ -1,0 +1,25 @@
+application: pathforms
+version: 1
+runtime: python
+api_version: 1
+
+
+
+
+handlers:
+  
+  
+- url: /(.*\.(jpg))
+  static_files: static/\1
+  upload: static/(.*\.(jpg))
+  
+- url: /(.*\.(pdf))
+  static_files: static/\1
+  upload: static/(.*\.(pdf))
+
+  
+- url: /css
+  static_dir: css
+  
+- url: /.*
+  script: pathforms.py

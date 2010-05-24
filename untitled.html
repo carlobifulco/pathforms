@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>
+			LongTermHandler
+		</title>
+		<meta name="generator" content="TextMate http://macromates.com/">
+		<meta name="author" content="carlo bifulco"><!-- Date: 2009-07-09 -->
+
+		<script src="css/jquery-latest.js" type="text/javascript" charset="utf-8">
+</script>
+		<script src="css/jquery.tools.min.js" type="text/javascript" charset="utf-8">
+</script>
+		<script src="css/jquery.sparkline.js" type="text/javascript" charset="utf-8">
+</script>
+		<script src="css/jgcharts.js" type="text/javascript" charset="utf-8">
+</script>
+	</head>
+	<body>
+		<p>
+			Hello, here the final analysis with a lot of google charts....<br>
+			<br>
+			<span id="all">all</span>
+		</p><script type="text/javascript">
+	var api = new jGCharts.Api(); 
+			jQuery('<img>').attr('src', api.make(
+			{
+			  colors : ['000000', '0000FF', 'DEB887', 'A9A9A9', '8B008B', 'FFD700', 'FF0000', '00FF00', 'FFFF00', '00FFFF', 'FF00FF,FFFFF0', '7CFC00', 'B8860B', 'BDB76B', 'EBFAAC', 'BEECFC', 'DAFCDD', 'FDCDFB', 'CDEEAB', 'CEEFFF', 'CFEECB', 'EABCCB', 'DCDDFC', 'AFFBBD'],
+			  chbg          : 'FFFFFF', 
+			  size : '500x600',
+			  //bar 
+			  bar_width   : 142, 
+			  bar_spacing : 0, 
+			  
+			  data :[
+			  [
+			  0,
+			  0,
+			  40,
+			  0,
+			  20,
+			  0,
+			  0,
+			  0,
+			  55,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  ],
+			  [
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  20,
+			  40,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  60,
+			  0,
+			  0,
+			  0,
+			  0,
+			  20,
+			  0,
+			  0,
+			  0,
+			  ],
+			  [
+			  60,
+			  0,
+			  0,
+			  0,
+			  20,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  40,
+			  0,
+			  0,
+			  20,
+			  0,
+			  0,
+			  40,
+			  0,
+			  ],
+			  [
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  10,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  40,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  0,
+			  ],
+			  ],
+			  type      : "bhs", 
+			  axis_labels :[
+			  'ARS',
+			  'MM',
+			  'SW',
+			  'MCF',
+			  ],
+			  legend :[
+			  'Conf-prep-bad',
+			  'Bone-marrow',
+			  'External-Consults',
+			  'Administration',
+			  'Spep',
+			  'Other',
+			  'Pmh-travel',
+			  'Meeting',
+			  'Frozens',
+			  'Large-cases',
+			  'Non-gyns',
+			  'Autopsy-Slides',
+			  'Autopsy',
+			  'Pb-without-report',
+			  'Paps',
+			  'Flow',
+			  'Qc',
+			  'Biopsies',
+			  'Cp',
+			  'Ppmc-sv-travel',
+			  'Pb-with-report',
+			  'Fish',
+			  '80%',
+			  'Conf-prep-easy',
+			  ],
+			  }
+			)).appendTo("#all");
+		</script>
+		<p>
+			<br>
+			<br>
+			<br>
+		</p>
+		<p>
+			total points over time....
+		</p>
+		<p id="path-points">
+			each pathologist points/category...
+		</p>
+		<p>
+			points-categories/pathologist...
+		</p>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+
+<script type="application/x-javascript"  src="css/jquery.js">  </script>
+
+
+<script type="text/javascript">  </script>
+
+  
+<br><br>
+
+<form action="emailsender" method="post">
+
+
+
+<br>
+
+<input type="hidden" name="form_results" value='{{form_results}}'></input>
+<table>
+<tr><td></td>
+  <td align="left" valigna="top">
+
+	</td>
+</tr>
+<tr><br></tr>
+<tr>
+<td align="left" >case number:</td>
+<td><input type="text" name="case_number" size="7"> </input></td>
+</tr>
+</table>
+<br>
+<div id="results">
+  <b></b>
+{{form_results}}
+</div>	
+<br>
+	
+	
+<div id="links">
+<input type="submit"  value="email" size="30"></input>
+</div>
+
+</form>

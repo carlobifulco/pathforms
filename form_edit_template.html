@@ -1,0 +1,47 @@
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#hide").hide()});
+  
+  
+  </script>
+
+
+ <p  style=""> 
+	<a id="links" onclick="$('#hide').toggle();"  >Show example</a> 
+</p>
+
+<small>
+	<p  class="box" style="" id="hide">
+	  <br>Always leave a space after the Yaml's "-" and the ":".
+	  <br> Wrap/escape : in  ":" or in ':'. 
+	  <br> Respect the "-" followed by " - pattern, e.g.:<br>
+	  <br>form:
+
+
+    <br>- Specimen
+    <br>-    
+    <br>&nbsp;&nbsp;- 'BONE MARROW, BIOPSY:'
+    <br>&nbsp;&nbsp;- 'BONE MARROW, BIOPSY AND ASPIRATE:'
+     <br>links:
+     <br>- ajcc colon: /ajcc/colon.pdf
+
+   </p>
+</small>
+
+
+
+ <FORM action="saveform" method='post'> 
+   <textarea  name="form_content"  rows="40" cols="30" style="direction: ltr;" lang="en">%s</textarea>
+<div>
+<INPUT TYPE="hidden" name="new_form_name" VALUE=%s>
+<br>
+<br>
+</div>
+
+
+<input type="submit" />
+     </form>
+     
+     

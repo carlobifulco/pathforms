@@ -1,0 +1,55 @@
+
+<div id="main">
+<script></script>
+
+<br>
+<br>
+
+<form action="enter_setup" method="get">
+<table>
+<tr>
+	<td align="right">Email Destination:</td>
+	<td align="left"><input type="text" name="recipient_email" value="{{email}}" size="30"></td>
+	<td></td>
+</tr>
+<tr>
+	<td align="right">Results header:</td>
+	<td align="left"><input type="text" name="header" value="{{header}}" size="30"></td>
+	<td></td>
+</tr>
+<tr>
+	<td align="right">Results line start:</td>
+	<td align="left"><input type="text" name="line_start" value="{{line_start}}" size="30"></td>
+	<td></td>
+</tr>
+
+
+<tr>
+	<td>Format</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+ {% if entered %}
+ <h6>OK; keep going...</h6>
+ </div>
+  {% else %}
+  <div id="links">
+<input type="submit" name="go" value="continue"></form>
+</div>
+  {% endif %}
+  
+
+
+
+     
+
+
+
+
+

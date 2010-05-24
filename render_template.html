@@ -1,0 +1,39 @@
+<%
+        import multiple_options
+        multiple_select=multiple_options.MultipleSelect()
+        multiple_input=multiple_options.Input()
+        %>
+
+        <FORM action="renderselection" method="post">
+        <% tot_index=-1 %>
+        % for option_couple in yaml_form:
+        <% 
+        heading=option_couple[0]
+        check_box_lines=option_couple[1]
+        %>
+         <table
+        style="text-align: left; bgcolor="#ddd"; width: 400px; height: 20px;"
+        border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr>
+            <td>${heading}</td>
+                  </tr>
+                </tbody></table>
+                <div align="left" style="margin-left : 4pc;">
+                    % for check_box_line in check_box_lines:
+                        <% tot_index+=1 %>
+                        <% 
+                        check_box_line=multiple_select.parse_and_render(check_box_line,tot_index)
+                        check_box_line=multiple_input.parse_and_render(check_box_line,tot_index)
+                        %>
+                        <INPUT type="checkbox" name="check_box_line" value=${tot_index}> ${check_box_line} <br>
+                        % endfor
+                </div>
+                <BR>
+        % endfor
+        <INPUT TYPE="hidden" name="new_form_name" VALUE="%s">
+        <br><INPUT type="submit"></FORM>
+        
+        <form action='editform' method="get">
+        <INPUT TYPE="hidden" name="new_form_name" VALUE="%s">
+        <INPUT type='submit' value='Edit form'></form>

@@ -1,0 +1,21 @@
+
+<root>
+<title>
+TCR
+</title>
+
+<option>
+Immunohistochemical studies have been performed and show
+<choice>asdasdasdasd </choice>
+<choice>bbbbbbbbbbbbb</choice>
+<choice>cccccccccccc</choice>
+</option>
+
+
+<option>
+These findings are consistent
+<choice>asdasdasdasd </choice>
+<choice>bbbbbbbbbbbbb</choice>
+<choice>cccccccccccc</choice>
+</option>
+</root>

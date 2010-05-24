@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<form action="chooseform" method="get">
+<br>
+<br>
+<table>
+ 
+<th align="left" bgcolor=""></th>
+<th align="left" bgcolor="rgb(230,230,230)">Default</th>
+<th align="left" bgcolor="rgb(230,230,230)">Personal</th>
+<th align="left" bgcolor="rgb(230,230,230)">Shared</th>
+<tr align="left"></tr>
+
+<tr>
+	<td align="right">EDIT A FORM:
+
+	</td>
+	<td>
+		
+		
+		<select  name="edit_form_choice">
+	        <option value=""> </option>
+	        {% for title in forms_titles %}
+			<option value="{{title}}">{{title}}</option>
+			{% endfor %}
+	        </select></td>
+		
+		
+	</td>
+	<td>
+	<input name="personal_form_name" type="text" /></td>
+	
+	
+	
+	
+<td>
+	<input name="shared_form_name" type="text" /></td>
+
+
+
+	
+</tr>
+
+
+
+<tr>
+	<td align="right">CREATE A NEW FORM:
+
+	</td>
+	<td>	
+	<input name="new_file_name" type="text" /></td>
+	<td>
+	<input name="personal_form_name" type="text" /></td>
+	
+	
+	
+	
+<td>
+	<input name="shared_form_name" type="text" /></td>
+
+
+
+	
+</tr>
+
+<tr align="left">
+<td align="right">USE A FORM:</td>
+<td>	
+	<select  name="old_form_choice">
+        <option value=""> </option>
+        {% for title in forms_titles %}
+		<option value="{{title}}">{{title}}</option>
+		{% endfor %}
+        </select></td>
+<td>
+
+	<select  name="personal_old_form_choice">
+        <option value=""> </option>
+		<option value=""></option>
+        </select>
+        </td>
+<td>
+	<select  name="shared_old_form_choice">
+        <option value=""> </option>
+		<option value=""></option>
+        </select></td>
+</tr>
+</table>
+
+<th align="left" bgcolor="#B7B7B7"></th>
+
+<br/>
+
+<BR><BR>
+  
+  <div id="links">
+
+<input value="Continue" type="submit" /></form> <br />
+</div>
+
+
